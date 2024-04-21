@@ -1,0 +1,64 @@
+@tailwind components;
+
+/*
+    [Base Button]
+*/
+@layer components {
+  .outline {
+    @apply border-2 border-primary bg-transparent text-primary
+    disabled:opacity-50;
+  }
+
+  .link {
+    @apply bg-transparent;
+  }
+
+  .filled {
+    box-shadow:
+      0px 0px 4px 0px #00000012,
+      0px 4px 6px -1px #0000001a;
+    @apply bg-white;
+  }
+
+  .rounded {
+    @apply rounded-lg;
+  }
+
+  .roundedFull {
+    @apply rounded-full;
+  }
+
+  .circle {
+    padding: 0.5rem !important;
+    @apply aspect-square rounded-full;
+  }
+
+  .sm {
+    @apply px-4 text-xs leading-3;
+  }
+
+  .md {
+    @apply p-3 text-base font-medium leading-6 tracking-[0.031rem];
+  }
+  
+  .lg {
+    @apply px-4 text-xl font-medium leading-6 tracking-[0.031rem];
+  }
+
+  .xl {
+    @apply px-4 text-2xl font-bold leading-6 tracking-[0.031rem];
+  }
+
+  .disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .disabledLink {
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    filter: opacity(0.5);
+  }
+}
